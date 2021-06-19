@@ -73,6 +73,7 @@ class _HomePageState extends State<HomePage> {
                 product.sum = product.price * product.count;
                 print("sum = ${product.sum}");
                 print("This is for test github");
+                print("This is for test github");
               }
 
               setState(() {});
