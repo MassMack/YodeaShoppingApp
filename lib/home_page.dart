@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                 product.price = await _onPressed(product.name);
                 product.sum = product.price * product.count;
                 print("sum = ${product.sum}");
-                
+                print("sdasd");
               }
 
               setState(() {});
