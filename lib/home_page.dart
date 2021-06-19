@@ -20,6 +20,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final Map<String, int> itemCount = {};
+  //HomePage({required Key key, @required this.itemCount}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,6 +76,9 @@ class _HomePageState extends State<HomePage> {
                 print("sum = ${product.sum}");
                 print("This is for test github");
                 print("This is for test github");
+                //var usrMap = {"name": "Tom", 'Email': 'tom@xyz.com'};
+
+                itemCount.forEach((k, v) => print('${k}: ${v}'));
               }
 
               setState(() {});
@@ -82,6 +87,7 @@ class _HomePageState extends State<HomePage> {
 
       new Text("${product.sum}"),
       new Text("${product.count}"),
+      new Text(""),
 
       Container(
         child: Center(

@@ -1,7 +1,10 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutterfbauth/home_page.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:tflite/tflite.dart';
+
+import '../cart.dart';
 
 class StaticImage extends StatefulWidget {
   @override
@@ -34,7 +37,7 @@ class _StaticImageState extends State<StaticImage> {
         imageMean: 0.0,
         imageStd: 127.5,
         threshold: 0.3, // defaults to 0.1
-        numResultsPerClass: 4, // defaults to 5
+        numResultsPerClass: 10, // defaults to 5
         asynch: true // defaults to true
         );
 
@@ -221,7 +224,12 @@ class _StaticImageState extends State<StaticImage> {
           itemCount.update(item, (dynamic val) => ++val);
         }
       }
-      return Future.delayed(Duration(seconds: 1), () => print("c${itemCount}"));
+      Navigator.pop(context);
+      Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => Cart(itemCount: itemCount,),
+    ));
     });
   }
 }
