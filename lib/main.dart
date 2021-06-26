@@ -4,12 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutterfbauth/login_page.dart';
 import 'package:flutterfbauth/services/authservice.dart';
 import 'package:flutterfbauth/splash.dart';
+
 List<CameraDescription> cameras;
- Future<void> main() async{
+Future<void> main() async {
+  
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   cameras = await availableCameras();
   runApp(MyApp());
+  
 }
 
 class MyApp extends StatelessWidget {
@@ -22,4 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
