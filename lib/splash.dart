@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutterfbauth/services/authservice.dart';
+import 'package:flutterfbauth/size_config.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 import 'login_page.dart';
@@ -19,6 +20,7 @@ class _splashScreenState extends State<splashScreen> {
   );
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return SplashScreen(
       seconds: 2,
       navigateAfterSeconds: AuthService().handleAuth(),

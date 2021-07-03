@@ -74,8 +74,7 @@ class _HomePageState extends State<HomePage> {
                 product.price = await _onPressed(product.name);
                 product.sum = product.price * product.count;
                 print("sum = ${product.sum}");
-                print("This is for test github");
-                print("This is for test github");
+               
                 //var usrMap = {"name": "Tom", 'Email': 'tom@xyz.com'};
 
                 itemCount.forEach((k, v) => print('${k}: ${v}'));
@@ -89,41 +88,7 @@ class _HomePageState extends State<HomePage> {
       new Text("${product.count}"),
       new Text(""),
 
-      Container(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              ButtonTheme(
-                minWidth: 170,
-                child: ElevatedButton(
-                  child: Text("ตรวจสอบสินค้า"),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => StaticImage(),
-                      ),
-                    );
-                  },
-                ),
-              ),
-              //   ButtonTheme(
-              //     minWidth: 160,
-              //   child: ElevatedButton(
-              //    child: Text("Real Time Detection"),
-              //     onPressed:() {
-              //    Navigator.push(context, MaterialPageRoute(
-              //        builder: (context) => LiveFeed(cameras),
-              //    ),
-              //   );
-              //  },
-              //  ),
-              //  ),
-            ],
-          ),
-        ),
-      ),
+      
     ]));
   }
 }

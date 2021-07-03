@@ -4,7 +4,7 @@ import 'package:flutterfbauth/home_page.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:tflite/tflite.dart';
 
-import '../cart.dart';
+import '../carttest.dart';
 
 class StaticImage extends StatefulWidget {
   @override
