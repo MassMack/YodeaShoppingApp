@@ -3,20 +3,21 @@ import 'package:flutter/material.dart';
 // Grocery item model
 class MGrocery {
   final String name;
-  final String url;
+  final String image;
   final String description;
   final double price;
+  final int id;
 
-  MGrocery({this.name, this.url, this.description, this.price});
+  MGrocery({this.name, this.image, this.description, this.price,this.id});
 }
 
 // Categories item model
 class MCategory {
   final String title;
-  final String url;
+  final String image;
   final Color color;
 
-  MCategory({this.title, this.url, this.color});
+  MCategory({this.title, this.image, this.color});
 }
 
 // Cart item model
@@ -30,7 +31,7 @@ class MCartItem {
 class MGroceries {
   final String title;
   final Color color;
-  final String url;
+  final String image;
 
-  MGroceries({this.title, this.color, this.url});
+  MGroceries({this.title, this.color, this.image});
 }

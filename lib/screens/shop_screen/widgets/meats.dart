@@ -15,25 +15,25 @@ class Meats extends StatelessWidget {
     MGrocery(
       name: 'Beef Bone',
       description: '500g',
-      url: 'assets/images/beef_bone.png',
+      image: 'assets/images/beef_bone.png',
       price: 7.99,            
     ),
     MGrocery(
       name: 'Broiler Chicken',
       description: '1kg',
-      url: 'assets/images/chicken.png',
+      image: 'assets/images/chicken.png',
       price: 6.99,            
     ),
     MGrocery(
       name: 'Beef Bone',
       description: '400g',
-      url: 'assets/images/beef_bone.png',
+      image: 'assets/images/beef_bone.png',
       price: 6.99,            
     ),
     MGrocery(
       name: 'Broiler Chicken',
       description: '1kg',
-      url: 'assets/images/chicken.png',
+      image: 'assets/images/chicken.png',
       price: 6.99,            
     ),
   ];

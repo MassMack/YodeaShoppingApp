@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfbauth/carttest.dart';
+import 'package:flutterfbauth/models/Product.dart';
 import 'package:flutterfbauth/models/models.dart';
 import 'package:flutterfbauth/widgets/round_button.dart';
-
+import 'package:flutterfbauth/models/Cart.dart';
 
 import '../../constants.dart';
 import 'widgets/details.dart';
@@ -43,7 +45,7 @@ class ItemDetailsSreen extends StatelessWidget {
                 title: 'Reviews',
                 trailing: Row(
                   children: List.generate(
-                      5,
+                      8,
                       (index) => Icon(
                             Icons.star,
                             color: Colors.amber,
@@ -54,7 +56,12 @@ class ItemDetailsSreen extends StatelessWidget {
               SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: RoundButton(title: 'Add To Cart'),
+                child: RoundButton(
+                    title: 'เพิ่มลงตะกร้า',
+                    onTap: () {
+                      print("item.id= ${item.id}");
+                      addCart(item.id);
+                    }),
               ),
             ],
           ),

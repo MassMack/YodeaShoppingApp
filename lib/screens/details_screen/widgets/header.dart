@@ -41,8 +41,8 @@ class Header extends StatelessWidget {
                   ),
                   Hero(
                     tag: item.hashCode,
-                    child: Image.asset(
-                      item.url,
+                    child: Image.network(
+                      item.image,
                       width: constraints.maxWidth * 0.6,
                       height: constraints.maxHeight * 0.6,
                       fit: BoxFit.contain,

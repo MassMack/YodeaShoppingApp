@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutterfbauth/models/models.dart';
 
-
 import '../../../constants.dart';
-
 
 class Details extends StatelessWidget {
   final MGrocery item;
@@ -42,15 +40,22 @@ class Details extends StatelessWidget {
           SizedBox(height: 20),
           Row(
             children: [
-              Icon(Icons.horizontal_rule, color: kBlackColor.withOpacity(0.7),),
+              Icon(
+                Icons.horizontal_rule,
+                color: kBlackColor.withOpacity(0.7),
+              ),
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 10),
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 decoration: BoxDecoration(
-                  border: Border.all(color: kBorderColor),                  
+                  border: Border.all(color: kBorderColor),
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text('1', style: kTitleStyle,),
+                child: Text(
+                  '5',
+                  style: kTitleStyle,
+                ),
               ),
               Icon(Icons.add, color: kPrimaryColor),
               Spacer(),

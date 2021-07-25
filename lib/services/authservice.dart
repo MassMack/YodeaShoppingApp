@@ -4,6 +4,7 @@ import 'package:flutter_login_facebook/flutter_login_facebook.dart';
 import 'package:flutterfbauth/error_handler.dart';
 import 'package:flutterfbauth/home_screen/home.dart';
 import 'package:flutterfbauth/login_page.dart';
+import 'package:flutterfbauth/screens/shop_screen/widgets/exclusive_offers.dart';
 
 import '../home_page.dart';
 
@@ -14,6 +15,7 @@ class AuthService {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (BuildContext context, snapshot) {
           if (snapshot.hasData) {
+            //ReadProduct();
             return Home();
           } else
             return LoginPage();

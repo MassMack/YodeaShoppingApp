@@ -14,29 +14,29 @@ class BestSellings extends StatelessWidget {
     MGrocery(
       name: 'Red Peppper',
       description: '1kg',
-      url: 'assets/images/pepper.png',
+      image: 'assets/images/pepper.png',
       price: 3.99,
     ),
     MGrocery(
       name: 'Ginger',
       description: '1kg',
       price: 5.99,
-      url: 'assets/images/ginger.png',
+      image: 'assets/images/ginger.png',
     ),
     MGrocery(
       name: 'Red Apples',
       description: '1kg',
       price: 4.99,
-      url: 'assets/images/apples.png',
+      image: 'assets/images/apples.png',
     ),
     MGrocery(
       name: 'Red Apple',
       description: '1kg',
       price: 5.99,
-      url: 'assets/images/bananas.png',
+      image: 'assets/images/bananas.png',
     ),
   ];
-
+ 
   @override
   Widget build(BuildContext context) {
     return Container(

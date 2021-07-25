@@ -15,7 +15,7 @@ class CartCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("cart_card");
+    
     return Row(
       children: [
         SizedBox(
@@ -28,7 +28,7 @@ class CartCard extends StatelessWidget {
                 color: Color(0xFFF5F6F9),
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: Image.asset(cart.product.images[0]),
+              child: Image.network(cart.product.image),
             ),
           ),
         ),
@@ -37,7 +37,7 @@ class CartCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              cart.product.title,
+              cart.product.name,
               style: TextStyle(color: Colors.black, fontSize: 16),
               maxLines: 2,
             ),

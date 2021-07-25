@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutterfbauth/models/models.dart';
 import 'package:flutterfbauth/screens/details_screen/item_details_screen.dart';
 
-
 import '../../../constants.dart';
 import '../../../mq.dart';
 
 class GroceryItem extends StatelessWidget {
+  // ส่วนด้านหน้า shop พอจากหน้านี้มันจะส่งไป item_detial_screen
   final MGrocery item;
   const GroceryItem({
     Key key,
@@ -36,10 +36,12 @@ class GroceryItem extends StatelessWidget {
               children: [
                 Hero(
                   tag: item.hashCode,
-                  child: Image.asset(
-                    item.url,
+                  child: /*Image.asset(
+                    item.image,
                     height: constraints.maxHeight * 0.4,
-                  ),
+                  ),*/
+                  Image.network(item.image,
+                    height: constraints.maxHeight * 0.4,)
                 ),
                 SizedBox(height: 10),
                 Text(item.name, style: kTitleStyle),
@@ -49,7 +51,7 @@ class GroceryItem extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      '\$${item.price}',
+                      "${item.price} บาท", //$
                       style: kTitleStyle.copyWith(fontWeight: FontWeight.w700),
                     ),
                     Container(

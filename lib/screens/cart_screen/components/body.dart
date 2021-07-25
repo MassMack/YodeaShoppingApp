@@ -13,9 +13,7 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
  
   @override
-  Widget build(BuildContext context) {
-     print("demoCarts.length${demoCarts.length}");
-      print("getProportionateScreenWidth(20)${getProportionateScreenWidth(20)}");
+  Widget build(BuildContext context) {  
     return Padding(
       padding:
           EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
@@ -23,7 +21,7 @@ class _BodyState extends State<Body> {
         itemCount: demoCarts.length,
         itemBuilder: (context, index) => Padding(
           padding: EdgeInsets.symmetric(vertical: 10),
-          child: Dismissible(
+          child: Dismissible( 
             key: Key(demoCarts[index].product.id.toString()),
             direction: DismissDirection.endToStart,
             onDismissed: (direction) {
@@ -32,13 +30,14 @@ class _BodyState extends State<Body> {
               });
             },
             background: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              decoration: BoxDecoration(
-                color: Color(0xFFFFE6E6),
-                borderRadius: BorderRadius.circular(15),
+              padding: EdgeInsets.symmetric(horizontal: 20), 
+              decoration: BoxDecoration( //กล่องไว้ใส่รูป
+                color: Color(0xFFFFE6E6), //สีพื้นหลัง
+                borderRadius: BorderRadius.circular(15), //ขอบพื้นหลังมน
               ),
               child: Row(
                 children: [
+                  
                   Spacer(),
                   SvgPicture.asset("assets/icons/Trash.svg"),
                 ],

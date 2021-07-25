@@ -16,7 +16,7 @@ class CartScreen extends StatelessWidget {
   }
 
   AppBar buildAppBar(BuildContext context) {
-    print("TT");
+    
     return AppBar(
       title: Column(
         children: [

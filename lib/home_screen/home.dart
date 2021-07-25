@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfbauth/models/Cart.dart';
 import 'package:flutterfbauth/screens/cart_screen/cart_screen.dart';
 import 'package:flutterfbauth/screens/detect_screen/detect_screen.dart';
 
@@ -31,6 +32,7 @@ class _HomeState extends State<Home> {
     CartScreen(),
     DetectScreen(),
     Container(
+      
       child: ElevatedButton(
           onPressed: () {
             AuthService().signOut();
@@ -52,6 +54,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     print("TEST1");
     print(currentIndex);
+    
     return Scaffold(
       body: _tabs[currentIndex],
       bottomNavigationBar: 

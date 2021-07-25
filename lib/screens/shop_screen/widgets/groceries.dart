@@ -15,12 +15,12 @@ class Groceries extends StatelessWidget {
     MGroceries(
       title: 'Pulses',
       color: HexColor('#F8A44C').withOpacity(0.15),
-      url: 'assets/images/pulses.png',
+      image: 'assets/images/pulses.png',
     ),
     MGroceries(
       title: 'Rice',
       color: kPrimaryColor.withOpacity(0.15),
-      url: 'assets/images/rice.png',
+      image: 'assets/images/rice.png',
     ),
   ];
 
@@ -41,7 +41,7 @@ class Groceries extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Image.asset(_items[i].url),
+              Image.asset(_items[i].image),
               SizedBox(width: 10),
               Text(_items[i].title, style: kTitleStyle),
             ],
