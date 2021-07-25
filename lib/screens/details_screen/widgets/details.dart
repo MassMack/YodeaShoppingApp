@@ -95,9 +95,9 @@ class Details extends StatefulWidget {
   _DetailsState createState() => _DetailsState();
 }
 
-class _DetailsState extends State<Details> {
-  int _counter = 1;
+int _counter = 1;
 
+class _DetailsState extends State<Details> {
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -190,4 +190,12 @@ class _DetailsState extends State<Details> {
       ),
     );
   }
+}
+
+getCounter() {
+  return _counter;
+}
+
+setCountertoone() {
+  _counter = 1;
 }

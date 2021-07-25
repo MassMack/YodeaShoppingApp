@@ -18,6 +18,7 @@ class ItemDetailsSreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    setCountertoone();
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -60,8 +61,7 @@ class ItemDetailsSreen extends StatelessWidget {
                     title: 'เพิ่มลงตะกร้า',
                     onTap: () {
                       print("item.id= ${item.id}");
-                      addCart(item.id);
-                      
+                      addCart(item.id, getCounter());
                     }),
               ),
             ],
