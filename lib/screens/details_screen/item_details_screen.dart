@@ -61,6 +61,7 @@ class ItemDetailsSreen extends StatelessWidget {
                     onTap: () {
                       print("item.id= ${item.id}");
                       addCart(item.id);
+                      
                     }),
               ),
             ],

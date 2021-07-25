@@ -21,7 +21,7 @@ addCart(int id) {
     print("ค่า demoProduct${demoProducts[i].id}");
     print("ค่า id${id}");
     if (demoProducts[i].id == id) {
-      print("เท่ากันแล้ว");
+      //print("เท่ากันแล้ว");
       demoCarts.add(Cart(product: demoProducts[i], numOfItem: 1));
       break;
     }
