@@ -25,7 +25,7 @@ class _CartState extends State<Cart> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("ใส่เงินเข้ามานะครับ"),
+          title: Text("ใส่เงินเข้ามานะครับคนดี"),
         ),
         body: Container());
   }
